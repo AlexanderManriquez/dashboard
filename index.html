@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/6262dc69d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <h2>Clínica Odontológica</h2>
+        <ul class="navbar">
+            <li><a class="navbar-link" href="#cardsSection">Resumen de Estadísticas</a></li>
+            <li><a class="navbar-link" href="#chartsSection">Gráficos</a></li>
+            <li><a class="navbar-link" href="#rankingsSection">Rankings</a></li>
+        </ul>
+    </aside>
+    <main class="dashboard">
+        <header><h1>Resumen de Estadísticas</h1></header>
+
+        <section class="cards" id="cardsSection">
+            <div class="card">Atenciones por mes</div>
+            <div class="card">Atenciones por día</div>
+            <div class="card">Ingresos Mensuales</div>
+            <div class="card">Tratamientos Solicitados</div>
+            <div class="card">Cumplimiento de citas</div>
+            <div class="card">Atenciones por área</div>
+            <div class="card">Atenciones por odontólogo</div>
+        </section>
+
+        <section  id="chartsSection">
+            <h2>Gráficos de Estadísticas</h2>
+            
+            <article class="charts-icons">
+                <button data-chart="pacientesChart" class="chart-btn active" title="Atenciones por mes">
+                    <i class="fa-solid fa-hospital-user"></i>
+                </button>
+
+                <button data-chart="tratamientosChart" class="chart-btn" title="Tratamientos Solicitados">
+                    <i class="fa-solid fa-tooth"></i>
+                </button>
+
+                <button data-chart="citasChart" class="chart-btn" title="Citas por día">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </button>
+
+                <button data-chart="ingresosChart" class="chart-btn" title="Ingresos Mensuales">
+                    <i class="fa-solid fa-money-bill-wave"></i> 
+                </button>
+
+                <button data-chart="cumplimientoChart" class="chart-btn" title="Cumplimiento de citas">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </article>
+
+            <div class="charts">
+                <canvas id="pacientesChart"></canvas>
+                <canvas id="tratamientosChart"></canvas>
+                <canvas id="citasChart"></canvas>
+                <canvas id="ingresosChart"></canvas>
+                <canvas id="cumplimientoChart"></canvas>
+            </div>
+        </section>
+
+        <section class="rankings" id="rankingsSection">
+            <h2>Ranking de Odontólogos</h2>
+            <ul id="rankingOdontologos"></ul>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

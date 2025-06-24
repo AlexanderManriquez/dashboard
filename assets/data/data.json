@@ -1,0 +1,26 @@
+{
+  "atencionesPorMes": [120, 150, 180, 200],
+  "meses": ["Enero", "Febrero", "Marzo", "Abril"],
+  "ingresosMensuales": [2400000, 3000000, 3600000, 4100000],
+  "tratamientosSolicitados": {
+    "Limpieza": 60,
+    "Ortodoncia": 45,
+    "Endodoncia": 25,
+    "Blanqueamiento": 30
+  },
+  "cumplimientoCitas": {
+    "Asistidas": 180,
+    "No Asistidas": 20
+  },
+  "atencionesPorArea": {
+    "Odontología General": 80,
+    "Ortodoncia": 50,
+    "Endodoncia": 30,
+    "Cirugía": 20
+  },
+  "odontologos": [
+    { "nombre": "Dra. Pérez", "atenciones": 55 },
+    { "nombre": "Dr. Gómez", "atenciones": 75 },
+    { "nombre": "Dra. López", "atenciones": 40 }
+  ]
+}
