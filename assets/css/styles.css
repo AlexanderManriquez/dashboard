@@ -48,35 +48,56 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .card {
   background-color: white;
-  padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  font-weight: 500;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0f172a;
 }
 
 .charts {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding: 1rem;
 }
 
 .charts canvas {
+  display: none;
   width: 100% !important;
   max-width: 800px;
   height: 400px !important;
   margin: 0 auto;
-  display: none;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Mostrar solo el primero por defecto */
+.charts canvas:first-child {
+  display: block;
+}
+
 
 
 .chart-icons {

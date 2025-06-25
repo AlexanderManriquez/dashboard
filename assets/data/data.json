@@ -1,26 +1,108 @@
 {
-  "atencionesPorMes": [120, 150, 180, 200],
-  "meses": ["Enero", "Febrero", "Marzo", "Abril"],
-  "ingresosMensuales": [2400000, 3000000, 3600000, 4100000],
-  "tratamientosSolicitados": {
-    "Limpieza": 60,
-    "Ortodoncia": 45,
-    "Endodoncia": 25,
-    "Blanqueamiento": 30
-  },
-  "cumplimientoCitas": {
-    "Asistidas": 180,
-    "No Asistidas": 20
-  },
-  "atencionesPorArea": {
-    "Odontología General": 80,
-    "Ortodoncia": 50,
-    "Endodoncia": 30,
-    "Cirugía": 20
-  },
-  "odontologos": [
-    { "nombre": "Dra. Pérez", "atenciones": 55 },
-    { "nombre": "Dr. Gómez", "atenciones": 75 },
-    { "nombre": "Dra. López", "atenciones": 40 }
+  "estadisticas": [
+    {
+      "mes": "Enero",
+      "atenciones": 120,
+      "ingresos": 2400000,
+      "citas": {
+        "asistidas": 45,
+        "noAsistidas": 5
+      },
+      "tratamientos": {
+        "Limpieza": 15,
+        "Ortodoncia": 12,
+        "Endodoncia": 8,
+        "Blanqueamiento": 10
+      },
+      "areas": {
+        "Odontología General": 40,
+        "Ortodoncia": 30,
+        "Endodoncia": 25,
+        "Cirugía": 25
+      },
+      "odontologos": [
+        { "nombre": "Dra. Pérez", "atenciones": 20 },
+        { "nombre": "Dr. Gómez", "atenciones": 25 },
+        { "nombre": "Dra. López", "atenciones": 15 }
+      ]
+    },
+    {
+      "mes": "Febrero",
+      "atenciones": 150,
+      "ingresos": 3000000,
+      "citas": {
+        "asistidas": 60,
+        "noAsistidas": 10
+      },
+      "tratamientos": {
+        "Limpieza": 18,
+        "Ortodoncia": 10,
+        "Endodoncia": 5,
+        "Blanqueamiento": 12
+      },
+      "areas": {
+        "Odontología General": 50,
+        "Ortodoncia": 40,
+        "Endodoncia": 30,
+        "Cirugía": 30
+      },
+      "odontologos": [
+        { "nombre": "Dra. Pérez", "atenciones": 25 },
+        { "nombre": "Dr. Gómez", "atenciones": 30 },
+        { "nombre": "Dra. López", "atenciones": 20 }
+      ]
+    },
+    {
+      "mes": "Marzo",
+      "atenciones": 180,
+      "ingresos": 3600000,
+      "citas": {
+        "asistidas": 70,
+        "noAsistidas": 10
+      },
+      "tratamientos": {
+        "Limpieza": 20,
+        "Ortodoncia": 15,
+        "Endodoncia": 10,
+        "Blanqueamiento": 15
+      },
+      "areas": {
+        "Odontología General": 60,
+        "Ortodoncia": 50,
+        "Endodoncia": 35,
+        "Cirugía": 35
+      },
+      "odontologos": [
+        { "nombre": "Dra. Pérez", "atenciones": 30 },
+        { "nombre": "Dr. Gómez", "atenciones": 35 },
+        { "nombre": "Dra. López", "atenciones": 25 }
+      ]
+    },
+    {
+      "mes": "Abril",
+      "atenciones": 200,
+      "ingresos": 4100000,
+      "citas": {
+        "asistidas": 75,
+        "noAsistidas": 15
+      },
+      "tratamientos": {
+        "Limpieza": 22,
+        "Ortodoncia": 18,
+        "Endodoncia": 12,
+        "Blanqueamiento": 16
+      },
+      "areas": {
+        "Odontología General": 70,
+        "Ortodoncia": 55,
+        "Endodoncia": 40,
+        "Cirugía": 35
+      },
+      "odontologos": [
+        { "nombre": "Dra. Pérez", "atenciones": 35 },
+        { "nombre": "Dr. Gómez", "atenciones": 40 },
+        { "nombre": "Dra. López", "atenciones": 30 }
+      ]
+    }
   ]
 }

@@ -18,15 +18,22 @@
     </aside>
     <main class="dashboard">
         <header><h1>Resumen de Estadísticas</h1></header>
+        
+        
+        <section  >
+            <div class="selector-mes">
+                <label for="mesSelect">Selecciona un mes:</label>
+                <select id="mesSelect">
+                    <option value="Todos">Todos</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                </select>
 
-        <section class="cards" id="cardsSection">
-            <div class="card">Atenciones por mes</div>
-            <div class="card">Atenciones por día</div>
-            <div class="card">Ingresos Mensuales</div>
-            <div class="card">Tratamientos Solicitados</div>
-            <div class="card">Cumplimiento de citas</div>
-            <div class="card">Atenciones por área</div>
-            <div class="card">Atenciones por odontólogo</div>
+            <div class="cards" id="cardsSection"></div>
+        </div>
+
         </section>
 
         <section  id="chartsSection">
